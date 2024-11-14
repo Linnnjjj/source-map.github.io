@@ -1,0 +1,168 @@
+body
+{
+        height: 1000px;
+}
+#nav
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+
+
+}
+.nav-logo
+{
+    position:relative;
+    float:left;
+    top:5px;
+    margin-left: 15px;
+    font-size:3em;
+    font-weight: 900;
+}
+.nav-servers
+{
+    position: relative;
+    margin-top: 15px;
+    margin-right: 50px;
+    float:right;
+    font-size: 1.5em;
+    font-weight: 900;
+
+}
+.lable
+{
+    position:relative;
+
+    margin-right:20px;
+    text-decoration: none;
+    color:black;
+}
+.lable::after
+{
+    content: '';
+    position: absolute;
+    background:black;
+    height: 3px;
+    width: 100%;
+    right:0;
+    top:35px;
+    border-radius: 6px;
+    transform-origin: right;
+    transition:transform .5s;
+    transform:scaleX(0);
+}
+.nav-servers a:hover::after
+{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+.display-bt
+{
+    width: 100px;
+    height: 50px;
+    font-size: 0.8em;
+    font-weight: 900;
+    background: transparent;
+    border-radius: 6px;
+    cursor:pointer;
+    transition: .8s;
+}
+.display-bt:hover
+{
+    background-color:black;
+    color: ghostwhite;
+    border-color: ghostwhite;
+}
+#choose
+{
+    width: 160px;
+
+    position: relative;
+    border:3px solid black;
+    float:right;
+    top:70px;
+    border-radius: 6px;
+    display:none;
+    overflow: hidden;
+
+}
+.icon-close
+{
+    position: relative;
+    margin-left:133px;
+    padding-top:-50px;
+    width: 30px;
+    background: transparent;
+    cursor:pointer;
+    border-top-right-radius: 6px ;
+    border-bottom-left-radius: 6px ;
+
+}
+.icon-close:hover
+{
+    background-color:black;
+    color: ghostwhite;
+    border-color: black;
+}
+.display-img
+{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 5px 5px 10px;
+    background: transparent;
+
+    cursor: pointer;
+    border-radius: 6px;
+    transition:.3s
+}
+.display-img:hover
+{
+    background-color:black;
+    color: ghostwhite;
+    border-color: ghostwhite;
+}
+#map
+{
+    position:absolute;
+    z-index: -1;
+    width: 1200px;
+    height: 3500px;
+    overflow: hidden;
+    top:120px;
+    left:50%;
+    transform:translateX(-50%);
+}
+#cd
+{
+    position:absolute;
+    top:0;
+    left:100px;
+
+}
+#pic1,#pic2,#pic3,#pic4,#pic5,#pic6
+{
+
+    position:absolute;
+    top:0;
+    display: none;
+    left:50%;
+    transform:translateX(-50%);
+}
+.cs-pic
+{
+    position: relative;
+    width: 1015px;
+    height: 646px;
+    top:50px;
+}
+
+.header{
+    position: absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+    display:block;
+    font-size: 2em;
+    
+}

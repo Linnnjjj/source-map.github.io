@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="/MAP">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4744861_s66x4kfcfi.css">
+</head>
+<body>
+    <!-- 顶部服务栏 -->
+    <dip id="nav">
+        <dip class="nav-logo">
+            SRTP
+        </dip>
+        <dip class="nav-servers">
+            <a class='lable' href="绿洲罗盘.html">Home</a>
+            <a class='lable' href="#">About</a>
+            <a class='lable' href="#">Services</a>
+            <a class='lable' href="#">Contact</a>
+            <button class='display-bt' onclick="img_choose()">Display</button>
+        </dip>
+    </dip>
+    <div id="choose">
+        <button class='icon-close iconfont' onclick="choose_close()"></button>
+
+        <button class='display-img' onclick="display_one()">防风固沙价值量</button>
+        <button class='display-img' onclick="display_two()">洪水调蓄价值量</button>
+        <button class='display-img' onclick="display_three()">空气质量价值量</button>
+        <button class='display-img' onclick="display_four()">土壤保持价值量</button>
+        <button class='display-img' onclick="display_five()">水源涵养价值量</button>
+        <button class='display-img' onclick="display_six()">碳固定价值量</button>
+
+    </div>
+    <div id="map">
+        <div id="cd">
+            <img class='cs-pic'src="/MAP/cd.png" alt="成都市">
+        </div>
+        <div id="pic1">
+            <h class="header">防风固沙价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/1.png" alt="成都市">
+        </div>
+        <div id="pic2">
+            <h class="header">洪水调蓄价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/2.png" alt="成都市">
+        </div> 
+        <div id="pic3">
+            <h class="header">空气质量价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/3.png" alt="成都市">
+        </div>
+        <div id="pic4">
+            <h class="header">土壤保持价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/4.png" alt="成都市">
+        </div>
+        <div id="pic5">
+            <h class="header">水源涵养价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/5.png" alt="成都市">
+        </div>
+        <div id="pic6">
+            <h class="header">碳固定价值量/(x 10万元)</h>
+            <img class='cs-pic' src="/MAP/6.png" alt="成都市">
+        </div>
+
+    </div>
+    <script>
+        function img_choose()
+        {
+            var choose=document.getElementById('choose');
+            choose.style.display='block';
+        }
+        function choose_close()
+        {
+            var choose_close=document.getElementById('choose');
+            choose_close.style.display='none';
+
+
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='block';
+        }
+        function display_one()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='block';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+        function display_two()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='block';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+        function display_three()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='block';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+        function display_four()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='block';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+        function display_five()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='block';
+            var choose=document.getElementById('pic6');
+            choose.style.display='none';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+        function display_six()
+        {
+            var choose=document.getElementById('pic1');
+            choose.style.display='none';
+            var choose=document.getElementById('pic2');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic3');
+            choose.style.display='none';
+            var choose=document.getElementById('pic4');
+            choose.style.display='none';
+            var choose=document.getElementById('pic5');
+            choose.style.display='none';
+            var choose=document.getElementById('pic6');
+            choose.style.display='block';
+            var choose=document.getElementById('cd');
+            choose.style.display='none';
+        }
+    </script>
+</body>
+</html>
